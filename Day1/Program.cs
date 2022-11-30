@@ -2,7 +2,7 @@
 using (StreamReader streamReader = new StreamReader("input.txt"))
 {
     string depth;
-    while ((depth = streamReader.ReadLine()) != null)
+    while ((depth = streamReader.ReadLine()!) != null)
     {
         depths.Add(Int32.Parse(depth)); // Add to list.     
     }
