@@ -1,10 +1,10 @@
 ﻿List<string> pilotCommands = new List<string>();
 using (StreamReader streamReader = new StreamReader("input.txt"))
 {
-    string oilotCommand;
-    while ((oilotCommand = streamReader.ReadLine()!) != null)
+    string pilotCommand;
+    while ((pilotCommand = streamReader.ReadLine()!) != null)
     {
-        pilotCommands.Add(oilotCommand); // Add to list.     
+        pilotCommands.Add(pilotCommand); // Add to list.     
     }
 }
 

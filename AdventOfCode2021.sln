@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day1", "Day1\Day1.csproj", "{55203FFE-2315-4572-9D27-731EE52499B1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day1Part1", "Day1\Day1Part1.csproj", "{55203FFE-2315-4572-9D27-731EE52499B1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day2Part1", "Day2\Day2Part1.csproj", "{9D55D12B-C019-4FA8-960F-75F5E0A0EA41}"
 EndProject
