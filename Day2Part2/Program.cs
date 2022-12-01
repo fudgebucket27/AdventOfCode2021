@@ -1,28 +1,31 @@
 ﻿List<string> pilotCommands = new List<string>();
 using (StreamReader streamReader = new StreamReader("input.txt"))
 {
-    string pilotCommand;
-    while ((pilotCommand = streamReader.ReadLine()!) != null)
+    string oilotCommand;
+    while ((oilotCommand = streamReader.ReadLine()!) != null)
     {
-        pilotCommands.Add(pilotCommand); // Add to list.     
+        pilotCommands.Add(oilotCommand); // Add to list.     
     }
 }
 
 int horizontalPosition = 0;
 int depth = 0;
-foreach(string pilotCommand in pilotCommands)
+int aim = 0;
+foreach (string pilotCommand in pilotCommands)
 {
     string[] command = pilotCommand.Split(' ');
-    if(command[0] == "forward")
+    if (command[0] == "forward")
     {
         horizontalPosition += Int32.Parse(command[1]);
-    }else if(command[0] == "down")
+        depth += Int32.Parse(command[1]) * aim;
+    }
+    else if (command[0] == "down")
     {
-        depth += Int32.Parse(command[1]);
+        aim += Int32.Parse(command[1]);
     }
     else if (command[0] == "up")
     {
-        depth -= Int32.Parse(command[1]);
+        aim -= Int32.Parse(command[1]);
     }
 }
 
